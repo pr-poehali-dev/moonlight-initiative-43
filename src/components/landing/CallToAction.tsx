@@ -1,32 +1,80 @@
+import Icon from "@/components/ui/icon"
 import ContactFormButton from "./ContactFormButton"
 
 export default function CallToAction() {
   return (
-    <section id="contact" className="card my-20 relative overflow-hidden shadow-md">
-      <div className="p-8 md:p-10 lg:p-12 flex flex-col md:flex-row items-start">
-        <div className="w-full md:w-3/5 z-10">
+    <>
+      <section id="about" className="my-20">
+        <div className="card p-8 md:p-10 lg:p-12 shadow-lg">
           <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-            Ваша следующая идея <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">начинается</span> здесь
+            О компании
+            <span className="text-[#EE7B2E] dark:text-[#EE7B2E]"> «Позитрон»</span>
           </h2>
-          <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
-            Есть идея или проблема, которую нужно решить?
+          <p className="mb-4 max-w-3xl text-gray-700 dark:text-gray-300">
+            «Позитрон» — модульный центр обработки данных, предназначенный для размещения вычислительных мощностей
+            любого масштаба: от корпоративных серверов до крупных AI-кластеров.
           </p>
-          <p className="mb-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
-            Давайте обсудим. Мы поможем найти лучший подход, составить план и понять, подходим ли мы друг другу.
+          <p className="max-w-3xl text-gray-700 dark:text-gray-300">
+            Мы создаём надёжную инженерную площадку с собственной энергетикой и продуманной архитектурой, чтобы IT-
+            компании, облачные провайдеры и разработчики AI могли расти без капитальных затрат на строительство с нуля.
           </p>
-          <div>
-            <ContactFormButton />
-          </div>
         </div>
+      </section>
 
-        <div className="hidden md:block md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center">
-          <img
-            src="/purple-circle-wave-static.png"
-            alt="Purple Wave"
-            className="w-full h-auto md:h-full md:w-auto md:object-cover md:object-left"
-          />
+      <section id="contact" className="card my-20 relative overflow-hidden shadow-md">
+        <div className="p-8 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="z-10">
+            <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+              Оставьте <span className="text-[#EE7B2E] dark:text-[#EE7B2E]">заявку</span>
+            </h2>
+            <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
+              Хотите арендовать мощности, стать партнёром или инвестором? Оставьте контакты и коротко опишите задачу — мы
+              свяжемся с вами и подберём подходящее решение.
+            </p>
+            <div className="flex items-center gap-6 mb-6 text-sm text-gray-700 dark:text-gray-300">
+              <div className="flex items-center gap-2">
+                <Icon name="MapPin" className="w-5 h-5 text-[#EE7B2E]" />
+                <span>Ленинградская область</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Icon name="Zap" className="w-5 h-5 text-[#EE7B2E]" />
+                <span>30 МВт · 3600 стоек</span>
+              </div>
+            </div>
+            <ContactFormButton>Оставить заявку</ContactFormButton>
+          </div>
+
+          <form className="card p-6 md:p-8 space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-black dark:text-white mb-1">Имя</label>
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                className="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-4 py-2.5 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#EE7B2E]"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-black dark:text-white mb-1">Телефон или e-mail</label>
+              <input
+                type="text"
+                placeholder="Как с вами связаться"
+                className="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-4 py-2.5 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#EE7B2E]"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-black dark:text-white mb-1">Задача</label>
+              <textarea
+                rows={3}
+                placeholder="Кратко опишите вашу задачу"
+                className="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-4 py-2.5 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#EE7B2E]"
+              />
+            </div>
+            <button type="submit" className="btn-primary w-full text-center">
+              Отправить заявку
+            </button>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
