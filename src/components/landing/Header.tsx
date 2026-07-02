@@ -32,13 +32,13 @@ export default function Header() {
     <>
       <header
         className={`sticky top-0 z-40 w-full transition-all duration-200 ${
-          isScrolled ? "bg-white/90 dark:bg-[#111111]/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+          isScrolled ? "bg-white/95 dark:bg-[#101112]/95 backdrop-blur-sm shadow-sm border-b border-[#e8edf5] dark:border-[#2a2d30]" : "bg-transparent"
         }`}
       >
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold text-black dark:text-white">
+              <span className="text-2xl font-bold text-[#1a1f2e] dark:text-white">
                 Пози<span className="text-[#EE7B2E]">трон</span>
               </span>
             </a>
@@ -49,7 +49,7 @@ export default function Header() {
                   <li>
                     <a
                       href="#advantages"
-                      className="text-black dark:text-white hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors"
+                      className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
                       Преимущества
                     </a>
@@ -57,7 +57,7 @@ export default function Header() {
                   <li>
                     <a
                       href="#opportunities"
-                      className="text-black dark:text-white hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors"
+                      className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
                       Возможности
                     </a>
@@ -65,7 +65,7 @@ export default function Header() {
                   <li>
                     <a
                       href="#model"
-                      className="text-black dark:text-white hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors"
+                      className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
                       Модель ЦОД
                     </a>
@@ -73,7 +73,7 @@ export default function Header() {
                   <li>
                     <a
                       href="#faq"
-                      className="text-black dark:text-white hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors"
+                      className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
                       Вопросы
                     </a>
@@ -81,9 +81,9 @@ export default function Header() {
                   <li>
                     <a
                       href="#contact"
-                      className="text-black dark:text-white hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors"
+                      className="btn-primary text-sm"
                     >
-                      Контакты
+                      Оставить заявку
                     </a>
                   </li>
                 </ul>

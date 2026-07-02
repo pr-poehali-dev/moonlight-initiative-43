@@ -3,21 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #111827;
-  --card: #f3f4f6;
-  --card-foreground: #111827;
-  --card-border: #e5e7eb;
+  --background: #f8f9fb;
+  --foreground: #1a1f2e;
+  --card: #ffffff;
+  --card-foreground: #1a1f2e;
+  --card-border: #e8edf5;
   --primary: #ee7b2e;
   --primary-foreground: #ffffff;
-  --secondary: #f3f4f6;
-  --secondary-foreground: #111827;
+  --teal: #2ec4b6;
+  --teal-light: #e6faf8;
+  --secondary: #f0f4fa;
+  --secondary-foreground: #1a1f2e;
   --muted: #6b7280;
   --muted-foreground: #4b5563;
-  --accent: #f3f4f6;
-  --accent-foreground: #111827;
-  --border: #d1d5db;
-  --input: #d1d5db;
+  --accent: #fff4ed;
+  --accent-foreground: #ee7b2e;
+  --border: #dde4ef;
+  --input: #dde4ef;
   --ring: #ee7b2e;
   --radius: 0.75rem;
 }
@@ -25,11 +27,13 @@
 .dark {
   --background: #101112;
   --foreground: #d9d9d9;
-  --card: #272829;
+  --card: #1c1e20;
   --card-foreground: #ffffff;
-  --card-border: #1a1a1a;
+  --card-border: #2a2d30;
   --primary: #ee7b2e;
   --primary-foreground: #ffffff;
+  --teal: #2ec4b6;
+  --teal-light: #0d2926;
   --secondary: #272829;
   --secondary-foreground: #ffffff;
   --muted: #a1a1aa;
@@ -99,24 +103,41 @@
     background-color: var(--card);
     color: var(--card-foreground);
     border: 1px solid var(--card-border);
-    @apply rounded-3xl overflow-hidden shadow-md;
+    @apply rounded-3xl overflow-hidden shadow-sm;
   }
 
   .dark .card {
     background-color: var(--card);
-    background-image: linear-gradient(to bottom, #2d2e2f, #272829);
+    background-image: linear-gradient(to bottom, #1e2022, #1c1e20);
     position: relative;
   }
 
   .btn-primary {
     background-color: #ee7b2e;
     color: #ffffff;
-    @apply px-6 py-2.5 rounded-md hover:bg-opacity-90 transition-all text-sm font-medium shadow-sm inline-block;
+    @apply px-6 py-2.5 rounded-lg hover:opacity-90 transition-all text-sm font-semibold shadow-sm inline-block;
+  }
+
+  .btn-teal {
+    background-color: #2ec4b6;
+    color: #ffffff;
+    @apply px-6 py-2.5 rounded-lg hover:opacity-90 transition-all text-sm font-semibold shadow-sm inline-block;
   }
 
   .btn-secondary {
-    color: var(--foreground);
-    @apply hover:underline transition-all text-sm font-medium py-2.5;
+    color: #2ec4b6;
+    border: 1.5px solid #2ec4b6;
+    @apply px-6 py-2 rounded-lg hover:bg-[#e6faf8] transition-all text-sm font-semibold inline-block;
+  }
+
+  .teal-line {
+    border-color: #2ec4b6;
+  }
+
+  .teal-tag {
+    background-color: #e6faf8;
+    color: #1da99d;
+    @apply text-xs font-semibold px-3 py-1 rounded-full;
   }
 
   .section-title {

@@ -19,12 +19,15 @@ const features = [
 export default function Model() {
   return (
     <section id="model" className="my-20">
-      <div className="card p-8 md:p-10 lg:p-12 shadow-lg">
-        <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+      <div
+        className="rounded-3xl p-8 md:p-10 lg:p-12 border border-[#e8edf5] shadow-sm"
+        style={{ background: "linear-gradient(135deg, #ffffff 60%, #e6faf8 100%)" }}
+      >
+        <h2 className="text-[#1a1f2e] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
           Модель
-          <span className="block text-[#EE7B2E] dark:text-[#EE7B2E]">центра обработки данных</span>
+          <span className="block text-[#EE7B2E]">центра обработки данных</span>
         </h2>
-        <p className="mb-10 max-w-2xl text-gray-700 dark:text-gray-300">
+        <p className="mb-10 max-w-2xl text-gray-500">
           Архитектура построена на принципах высокой доступности, энергоэффективности и поэтапного масштабирования. На
           участке размещаются энергетическая инфраструктура, модули дата-центра, административные здания и парковка.
         </p>
@@ -33,11 +36,11 @@ export default function Model() {
           {specs.map((spec) => (
             <div
               key={spec.id}
-              className="rounded-2xl border border-gray-200 dark:border-gray-700 p-5 text-center"
+              className="rounded-2xl border-t-4 border-[#2EC4B6] bg-white p-5 text-center shadow-sm"
             >
-              <Icon name={spec.icon} className="w-6 h-6 text-[#EE7B2E] mx-auto mb-3" />
-              <div className="text-2xl md:text-3xl font-bold text-black dark:text-white">{spec.value}</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">{spec.label}</div>
+              <Icon name={spec.icon} className="w-6 h-6 text-[#2EC4B6] mx-auto mb-3" />
+              <div className="text-2xl md:text-3xl font-bold text-[#EE7B2E]">{spec.value}</div>
+              <div className="text-sm text-gray-500 mt-1">{spec.label}</div>
             </div>
           ))}
         </div>
@@ -45,8 +48,10 @@ export default function Model() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
           {features.map((feature) => (
             <div key={feature} className="flex items-start gap-3">
-              <Icon name="Check" className="w-5 h-5 text-[#EE7B2E] mt-0.5 flex-shrink-0" />
-              <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+              <div className="w-5 h-5 rounded-full bg-[#e6faf8] flex items-center justify-center shrink-0 mt-0.5">
+                <Icon name="Check" className="w-3 h-3 text-[#2EC4B6]" />
+              </div>
+              <span className="text-gray-600">{feature}</span>
             </div>
           ))}
         </div>

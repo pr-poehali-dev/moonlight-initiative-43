@@ -2,20 +2,25 @@ import ContactFormButton from "./ContactFormButton"
 
 export default function Hero() {
   return (
-    <section id="hero" className="card my-8 relative overflow-hidden shadow-md">
+    <section
+      id="hero"
+      className="my-8 relative overflow-hidden rounded-3xl border border-[#e8edf5] shadow-sm"
+      style={{ background: 'linear-gradient(135deg, #fff4ed 0%, #ffffff 50%, #e6faf8 100%)' }}
+    >
       <div className="p-8 md:p-10 lg:p-12 flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2 z-10">
-          <h1 className="text-black dark:text-white text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
+          <span className="teal-tag mb-4 inline-block">Ленинградская область · 4 Га</span>
+          <h1 className="text-[#1a1f2e] text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
             Модульный ЦОД
-            <span className="block text-[#EE7B2E] dark:text-[#EE7B2E]">Позитрон</span>
+            <span className="block text-[#EE7B2E]">Позитрон</span>
           </h1>
-          <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
+          <p className="my-6 text-sm md:text-base max-w-md text-gray-600">
             Готовая инженерная площадка для ваших серверов и AI-кластеров. Размещение вычислительных мощностей любого
             масштаба в Ленинградской области — без капитальных затрат на строительство с нуля.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <ContactFormButton>Оставить заявку</ContactFormButton>
-            <a href="#model" className="btn-secondary text-black dark:text-white">
+            <a href="#model" className="btn-secondary">
               Узнать больше
             </a>
           </div>
