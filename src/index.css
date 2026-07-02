@@ -47,13 +47,18 @@
 
 @layer base {
   body {
-    background-color: var(--background);
+    background-color: #f8f9fb;
     color: var(--foreground);
     font-family: "Inter", system-ui, sans-serif;
   }
 
+  .dark body {
+    background-color: #101112;
+  }
+
   html {
     scroll-behavior: smooth;
+    background-color: #f8f9fb;
   }
 
   h1 {
