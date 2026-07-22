@@ -36,7 +36,7 @@ const status = [
 export default function Clients() {
   return (
     <section id="clients" className="my-20">
-      <h2 className="text-[#2b2620] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+      <h2 className="text-[#1a2530] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
         Наши
         <span className="block text-[#EE7B2E]">клиенты</span>
       </h2>
@@ -48,12 +48,12 @@ export default function Clients() {
         {clients.map((item) => (
           <div
             key={item.id}
-            className="bg-[#fffdfb] dark:bg-[#262019] rounded-3xl p-6 border border-[#f0e7dc] dark:border-[#352d24] hover:border-[#2EC4B6] transition-colors duration-300 shadow-sm hover:shadow-md"
+            className="bg-white dark:bg-[#16202b] rounded-3xl p-6 shadow-[0_4px_24px_-8px_rgba(26,37,48,0.08)] hover:shadow-md transition-shadow duration-300"
           >
-            <div className="bg-[#e6faf8] w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+            <div className="bg-[#e3f7f5] w-12 h-12 rounded-xl flex items-center justify-center mb-4">
               <Icon name={item.icon} className="w-6 h-6 text-[#2EC4B6]" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-[#2b2620] dark:text-white">{item.title}</h3>
+            <h3 className="text-lg font-semibold mb-2 text-[#1a2530] dark:text-white">{item.title}</h3>
             <p className="text-gray-500 dark:text-gray-400 text-sm">{item.description}</p>
           </div>
         ))}
@@ -61,7 +61,7 @@ export default function Clients() {
 
       <div
         id="status"
-        className="rounded-3xl border border-[#f0e7dc] bg-[#fffdfb] dark:bg-[#262019] dark:border-[#352d24] p-8 md:p-10 shadow-sm"
+        className="rounded-3xl bg-white dark:bg-[#16202b] p-8 md:p-10 shadow-[0_4px_24px_-8px_rgba(26,37,48,0.08)]"
       >
         <div className="flex items-center gap-3 mb-6">
           <span className="relative flex h-3 w-3">
@@ -73,10 +73,10 @@ export default function Clients() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {status.map((item) => (
             <div key={item} className="flex items-start gap-3">
-              <div className="w-7 h-7 rounded-full bg-[#e6faf8] flex items-center justify-center shrink-0">
+              <div className="w-7 h-7 rounded-full bg-[#e3f7f5] flex items-center justify-center shrink-0">
                 <Icon name="Check" className="w-4 h-4 text-[#2EC4B6]" />
               </div>
-              <span className="text-[#2b2620] dark:text-gray-200 font-medium">{item}</span>
+              <span className="text-[#1a2530] dark:text-gray-200 font-medium">{item}</span>
             </div>
           ))}
         </div>

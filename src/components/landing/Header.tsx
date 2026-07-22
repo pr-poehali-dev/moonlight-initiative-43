@@ -32,13 +32,13 @@ export default function Header() {
     <>
       <header
         className={`sticky top-0 z-40 w-full transition-all duration-200 ${
-          isScrolled ? "bg-white/95 dark:bg-[#1c1815]/95 backdrop-blur-sm shadow-sm border-b border-[#f0e7dc] dark:border-[#352d24]" : "bg-transparent"
+          isScrolled ? "bg-white/95 dark:bg-[#16202b]/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
         }`}
       >
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold text-[#2b2620] dark:text-white">
+              <span className="text-2xl font-bold text-[#1a2530] dark:text-white">
                 Пози<span className="text-[#EE7B2E]">трон</span>
               </span>
             </a>
@@ -110,9 +110,9 @@ export default function Header() {
 
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-[100] bg-black/50 md:hidden">
-          <div className="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#fffdfb] dark:bg-[#111111] shadow-xl overflow-y-auto">
-            <div className="sticky top-0 z-10 flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800 bg-[#fffdfb] dark:bg-[#111111]">
-              <span className="text-xl font-bold text-black dark:text-white">
+          <div className="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-white dark:bg-[#16202b] shadow-xl overflow-y-auto">
+            <div className="sticky top-0 z-10 flex items-center justify-between p-4 border-b border-[#e2ebf0] dark:border-[#1f2c38] bg-white dark:bg-[#16202b]">
+              <span className="text-xl font-bold text-[#1a2530] dark:text-white">
                 Пози<span className="text-[#EE7B2E]">трон</span>
               </span>
               <button

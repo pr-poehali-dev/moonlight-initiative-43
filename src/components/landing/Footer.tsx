@@ -2,11 +2,11 @@ import Icon from "@/components/ui/icon"
 
 export default function Footer() {
   return (
-    <footer className="container py-12 border-t border-[#ece0d2] dark:border-[#352d24]">
+    <footer className="container py-12 border-t border-[#dde7ed] dark:border-[#1f2c38]">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
         <div className="md:col-span-2">
           <a href="#" className="flex items-center mb-4">
-            <span className="text-2xl font-bold text-[#2b2620] dark:text-white">
+            <span className="text-2xl font-bold text-[#1a2530] dark:text-white">
               Пози<span className="text-[#EE7B2E]">трон</span>
             </span>
           </a>
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold text-[#2b2620] dark:text-white mb-4">Навигация</h4>
+          <h4 className="font-semibold text-[#1a2530] dark:text-white mb-4">Навигация</h4>
           <ul className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
             <li><a href="#about" className="hover:text-[#EE7B2E] transition-colors">О проекте</a></li>
             <li><a href="#advantages" className="hover:text-[#EE7B2E] transition-colors">Преимущества</a></li>
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold text-[#2b2620] dark:text-white mb-4">Контакты</h4>
+          <h4 className="font-semibold text-[#1a2530] dark:text-white mb-4">Контакты</h4>
           <ul className="space-y-3 text-sm text-gray-500 dark:text-gray-400">
             <li className="flex items-center gap-2">
               <Icon name="MapPin" className="w-4 h-4 text-[#2EC4B6]" />

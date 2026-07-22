@@ -40,7 +40,7 @@ const stages = [
 export default function Roadmap() {
   return (
     <section id="roadmap" className="my-20">
-      <h2 className="text-[#2b2620] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+      <h2 className="text-[#1a2530] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
         Дорожная
         <span className="block text-[#EE7B2E]">карта</span>
       </h2>
@@ -52,12 +52,12 @@ export default function Roadmap() {
         {stages.map((stage) => (
           <div
             key={stage.id}
-            className={`rounded-3xl p-6 border shadow-sm transition-all duration-300 ${
+            className={`rounded-3xl p-6 transition-all duration-300 ${
               stage.done
-                ? "bg-[#fff4ed] border-[#EE7B2E]/30 dark:bg-[#2a1a0a] dark:border-[#EE7B2E]/30"
+                ? "bg-[#fff4ed] dark:bg-[#2a1a0a] shadow-[0_4px_24px_-8px_rgba(238,123,46,0.2)]"
                 : stage.active
-                ? "bg-[#fffdfb] border-[#2EC4B6] shadow-md dark:bg-[#262019]"
-                : "bg-[#fffdfb] border-[#f0e7dc] dark:bg-[#262019] dark:border-[#352d24]"
+                ? "bg-white dark:bg-[#16202b] shadow-md"
+                : "bg-white dark:bg-[#16202b] shadow-[0_4px_24px_-8px_rgba(26,37,48,0.08)]"
             }`}
           >
             <div className="flex items-center justify-between mb-4">
@@ -83,7 +83,7 @@ export default function Roadmap() {
                   stage.done ? "text-[#EE7B2E]" : stage.active ? "text-[#2EC4B6]" : "text-gray-300"
                 }`}
               />
-              <h3 className="text-base font-semibold text-[#2b2620] dark:text-white">{stage.title}</h3>
+              <h3 className="text-base font-semibold text-[#1a2530] dark:text-white">{stage.title}</h3>
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm">{stage.description}</p>
           </div>

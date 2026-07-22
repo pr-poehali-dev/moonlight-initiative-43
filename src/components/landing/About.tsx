@@ -10,12 +10,12 @@ export default function About() {
   return (
     <section id="about" className="my-20">
       <div
-        className="rounded-3xl border border-[#f0e7dc] shadow-sm overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #fffdfb 55%, #fbf1e9 100%)" }}
+        className="rounded-3xl overflow-hidden shadow-[0_4px_24px_-8px_rgba(26,37,48,0.08)]"
+        style={{ background: "linear-gradient(135deg, #ffffff 55%, #e3f7f5 100%)" }}
       >
         <div className="p-8 md:p-10 lg:p-12">
           <span className="teal-tag mb-4 inline-block">О проекте</span>
-          <h2 className="text-[#2b2620] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+          <h2 className="text-[#1a2530] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
             15 центров обработки данных
             <span className="block text-[#EE7B2E]">на одной площадке</span>
           </h2>
@@ -33,7 +33,7 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             {highlights.map((item) => (
-              <div key={item.id} className="rounded-2xl border-t-4 border-[#2EC4B6] bg-[#fffdfb] p-5 shadow-sm">
+              <div key={item.id} className="rounded-2xl border-t-4 border-[#2EC4B6] bg-white p-5 shadow-[0_4px_20px_-8px_rgba(26,37,48,0.1)]">
                 <Icon name={item.icon} className="w-6 h-6 text-[#2EC4B6] mb-3" />
                 <div className="text-2xl md:text-3xl font-bold text-[#EE7B2E]">{item.value}</div>
                 <div className="text-sm text-gray-500 mt-1">{item.label}</div>

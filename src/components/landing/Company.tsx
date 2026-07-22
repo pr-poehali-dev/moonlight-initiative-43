@@ -24,11 +24,11 @@ const facts = [
 export default function Company() {
   return (
     <section id="company" className="my-20">
-      <div className="bg-[#fffdfb] dark:bg-[#262019] rounded-3xl border border-[#f0e7dc] dark:border-[#352d24] shadow-sm overflow-hidden">
+      <div className="bg-white dark:bg-[#16202b] rounded-3xl shadow-[0_4px_24px_-8px_rgba(26,37,48,0.08)] overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
             <span className="teal-tag mb-4 inline-block w-fit">О компании</span>
-            <h2 className="text-[#2b2620] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+            <h2 className="text-[#1a2530] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
               Группа компаний
               <span className="block text-[#EE7B2E]">«Позитрон»</span>
             </h2>
@@ -41,11 +41,11 @@ export default function Company() {
             <div className="space-y-4">
               {facts.map((fact) => (
                 <div key={fact.id} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#e6faf8] flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-[#e3f7f5] flex items-center justify-center shrink-0">
                     <Icon name={fact.icon} className="w-5 h-5 text-[#2EC4B6]" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#2b2620] dark:text-white">{fact.title}</h3>
+                    <h3 className="font-semibold text-[#1a2530] dark:text-white">{fact.title}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{fact.description}</p>
                   </div>
                 </div>

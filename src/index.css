@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #faf6f1;
-  --foreground: #2b2620;
-  --card: #fffdfb;
-  --card-foreground: #2b2620;
-  --card-border: #f0e7dc;
+  --background: #eef3f6;
+  --foreground: #1a2530;
+  --card: #ffffff;
+  --card-foreground: #1a2530;
+  --card-border: #e2ebf0;
   --primary: #ee7b2e;
   --primary-foreground: #ffffff;
   --teal: #2ec4b6;
-  --teal-light: #e6faf8;
-  --secondary: #f5ede3;
-  --secondary-foreground: #2b2620;
-  --muted: #8a7f70;
-  --muted-foreground: #6b6156;
+  --teal-light: #e3f7f5;
+  --secondary: #e6eef2;
+  --secondary-foreground: #1a2530;
+  --muted: #6b7a86;
+  --muted-foreground: #55636e;
   --accent: #fff4ed;
   --accent-foreground: #ee7b2e;
-  --border: #ece0d2;
-  --input: #ece0d2;
-  --ring: #ee7b2e;
-  --radius: 0.75rem;
+  --border: #dde7ed;
+  --input: #dde7ed;
+  --ring: #2ec4b6;
+  --radius: 1rem;
 }
 
 .dark {
-  --background: #1c1815;
-  --foreground: #ece5dd;
-  --card: #262019;
+  --background: #0f1720;
+  --foreground: #e2eaf0;
+  --card: #16202b;
   --card-foreground: #ffffff;
-  --card-border: #352d24;
+  --card-border: #1f2c38;
   --primary: #ee7b2e;
   --primary-foreground: #ffffff;
   --teal: #2ec4b6;
@@ -47,18 +47,18 @@
 
 @layer base {
   body {
-    background-color: #faf6f1;
+    background-color: #eef3f6;
     color: var(--foreground);
     font-family: "Inter", system-ui, sans-serif;
   }
 
   .dark body {
-    background-color: #1c1815;
+    background-color: #0f1720;
   }
 
   html {
     scroll-behavior: smooth;
-    background-color: #faf6f1;
+    background-color: #eef3f6;
   }
 
   h1 {
@@ -107,14 +107,16 @@
   .card {
     background-color: var(--card);
     color: var(--card-foreground);
-    border: 1px solid var(--card-border);
-    @apply rounded-3xl overflow-hidden shadow-sm;
+    border: none;
+    @apply rounded-3xl overflow-hidden;
+    box-shadow: 0 4px 24px -8px rgba(26, 37, 48, 0.08);
   }
 
   .dark .card {
     background-color: var(--card);
-    background-image: linear-gradient(to bottom, #1e2022, #1c1e20);
+    background-image: none;
     position: relative;
+    box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.4);
   }
 
   .btn-primary {
@@ -130,9 +132,9 @@
   }
 
   .btn-secondary {
-    color: #2ec4b6;
-    border: 1.5px solid #2ec4b6;
-    @apply px-6 py-2 rounded-lg hover:bg-[#e6faf8] transition-all text-sm font-semibold inline-block;
+    color: #17a99b;
+    background-color: #e3f7f5;
+    @apply px-6 py-2.5 rounded-lg hover:bg-[#d3f1ee] transition-all text-sm font-semibold inline-block;
   }
 
   .teal-line {
@@ -140,8 +142,8 @@
   }
 
   .teal-tag {
-    background-color: #e6faf8;
-    color: #1da99d;
+    background-color: #e3f7f5;
+    color: #17a99b;
     @apply text-xs font-semibold px-3 py-1 rounded-full;
   }
 
