@@ -48,6 +48,14 @@ export default function Header() {
                 <ul className="flex space-x-6">
                   <li>
                     <a
+                      href="#about"
+                      className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
+                    >
+                      О проекте
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="#advantages"
                       className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
@@ -56,33 +64,30 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href="#opportunities"
+                      href="#clients"
                       className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
-                      Возможности
+                      Клиенты
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#model"
+                      href="#roadmap"
                       className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
-                      Модель ЦОД
+                      Этапы
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#faq"
+                      href="#company"
                       className="text-gray-600 dark:text-gray-300 hover:text-[#EE7B2E] dark:hover:text-[#EE7B2E] transition-colors text-sm"
                     >
-                      Вопросы
+                      О компании
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#contact"
-                      className="btn-primary text-sm"
-                    >
+                    <a href="#contact" className="btn-primary text-sm">
                       Оставить заявку
                     </a>
                   </li>
@@ -132,6 +137,15 @@ export default function Header() {
                 </li>
                 <li>
                   <a
+                    href="#about"
+                    className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    О проекте
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="#advantages"
                     className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                     onClick={() => setMobileMenuOpen(false)}
@@ -141,20 +155,29 @@ export default function Header() {
                 </li>
                 <li>
                   <a
-                    href="#opportunities"
+                    href="#clients"
                     className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Возможности
+                    Клиенты
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#model"
+                    href="#roadmap"
                     className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Модель ЦОД
+                    Этапы
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#company"
+                    className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    О компании
                   </a>
                 </li>
                 <li>

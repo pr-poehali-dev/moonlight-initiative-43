@@ -1,19 +1,10 @@
 import Icon from "@/components/ui/icon"
 
 const specs = [
-  { id: 1, value: "2 МВт", label: "Базовый модуль", icon: "Box" },
-  { id: 2, value: "4 МВт", label: "Объединённый блок", icon: "Boxes" },
-  { id: 3, value: "30 МВт", label: "Суммарная мощность", icon: "Zap" },
-  { id: 4, value: "3600", label: "Серверных стоек", icon: "Server" },
-]
-
-const features = [
-  "Архитектура высокой доступности и энергоэффективности",
-  "Поэтапное масштабирование под любой объём нагрузки",
-  "Собственная выработка электроэнергии на ГПУ",
-  "Доступ к магистральным каналам связи",
-  "Благоприятные климатические условия Ленинградской области",
-  "Развитая транспортная и энергетическая инфраструктура",
+  { id: 1, value: "15", label: "отдельных ЦОД", icon: "Boxes" },
+  { id: 2, value: "2 МВт", label: "мощность одного ЦОД", icon: "Zap" },
+  { id: 3, value: "240", label: "стоек в одном ЦОД", icon: "Server" },
+  { id: 4, value: "4,1 Га", label: "площадь участка", icon: "MapPin" },
 ]
 
 export default function Model() {
@@ -21,37 +12,32 @@ export default function Model() {
     <section id="model" className="my-20">
       <div
         className="rounded-3xl p-8 md:p-10 lg:p-12 border border-[#e8edf5] shadow-sm"
-        style={{ background: "linear-gradient(135deg, #ffffff 60%, #e6faf8 100%)" }}
+        style={{ background: "linear-gradient(135deg, #ffffff 55%, #e6faf8 100%)" }}
       >
+        <span className="teal-tag mb-4 inline-block">3D-модель</span>
         <h2 className="text-[#1a1f2e] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
           Модель
           <span className="block text-[#EE7B2E]">центра обработки данных</span>
         </h2>
         <p className="mb-10 max-w-2xl text-gray-500">
-          Архитектура построена на принципах высокой доступности, энергоэффективности и поэтапного масштабирования. На
-          участке размещаются энергетическая инфраструктура, модули дата-центра, административные здания и парковка.
+          Наглядная планировка площадки: 15 модульных ЦОД, энергетическая инфраструктура на газогенераторных установках,
+          административные здания и внутриплощадочные сети.
         </p>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+        <div className="rounded-2xl overflow-hidden border border-[#e8edf5] shadow-sm mb-10 bg-white">
+          <img
+            src="https://cdn.poehali.dev/projects/4f64628e-3175-4b19-b6dc-410e56e48aea/files/3ac863b7-c3ee-435a-b403-31b6655235fc.jpg"
+            alt="3D-модель дата-центра Позитрон"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {specs.map((spec) => (
-            <div
-              key={spec.id}
-              className="rounded-2xl border-t-4 border-[#2EC4B6] bg-white p-5 text-center shadow-sm"
-            >
+            <div key={spec.id} className="rounded-2xl border-t-4 border-[#2EC4B6] bg-white p-5 text-center shadow-sm">
               <Icon name={spec.icon} className="w-6 h-6 text-[#2EC4B6] mx-auto mb-3" />
               <div className="text-2xl md:text-3xl font-bold text-[#EE7B2E]">{spec.value}</div>
               <div className="text-sm text-gray-500 mt-1">{spec.label}</div>
-            </div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-          {features.map((feature) => (
-            <div key={feature} className="flex items-start gap-3">
-              <div className="w-5 h-5 rounded-full bg-[#e6faf8] flex items-center justify-center shrink-0 mt-0.5">
-                <Icon name="Check" className="w-3 h-3 text-[#2EC4B6]" />
-              </div>
-              <span className="text-gray-600">{feature}</span>
             </div>
           ))}
         </div>

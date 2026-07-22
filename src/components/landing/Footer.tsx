@@ -11,7 +11,7 @@ export default function Footer() {
             </span>
           </a>
           <p className="text-sm text-gray-500 dark:text-gray-400 max-w-sm">
-            Модульный центр обработки данных для серверов и AI-кластеров. Готовая инженерная площадка в Ленинградской
+            Дата-центр из 15 отдельных ЦОД для серверов и AI-кластеров. Готовая инженерная площадка в Ленинградской
             области.
           </p>
         </div>
@@ -19,11 +19,12 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-[#1a1f2e] dark:text-white mb-4">Навигация</h4>
           <ul className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="#about" className="hover:text-[#EE7B2E] transition-colors">О проекте</a></li>
             <li><a href="#advantages" className="hover:text-[#EE7B2E] transition-colors">Преимущества</a></li>
-            <li><a href="#opportunities" className="hover:text-[#EE7B2E] transition-colors">Возможности</a></li>
-            <li><a href="#model" className="hover:text-[#EE7B2E] transition-colors">Модель ЦОД</a></li>
-            <li><a href="#roadmap" className="hover:text-[#EE7B2E] transition-colors">Дорожная карта</a></li>
-            <li><a href="#faq" className="hover:text-[#EE7B2E] transition-colors">Вопросы</a></li>
+            <li><a href="#clients" className="hover:text-[#EE7B2E] transition-colors">Клиенты</a></li>
+            <li><a href="#roadmap" className="hover:text-[#EE7B2E] transition-colors">Этапы</a></li>
+            <li><a href="#model" className="hover:text-[#EE7B2E] transition-colors">3D-модель</a></li>
+            <li><a href="#company" className="hover:text-[#EE7B2E] transition-colors">О компании</a></li>
             <li><a href="#contact" className="hover:text-[#EE7B2E] transition-colors">Контакты</a></li>
           </ul>
         </div>
