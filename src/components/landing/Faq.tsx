@@ -49,8 +49,8 @@ export default function Faq() {
 
   return (
     <section id="faq" className="my-20">
-      <div className="bg-white dark:bg-[#1c1e20] rounded-3xl p-8 md:p-10 border border-[#e8edf5] dark:border-[#2a2d30] shadow-sm">
-        <h2 className="text-[#1a1f2e] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+      <div className="bg-[#fffdfb] dark:bg-[#262019] rounded-3xl p-8 md:p-10 border border-[#f0e7dc] dark:border-[#352d24] shadow-sm">
+        <h2 className="text-[#2b2620] dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
           Частые
           <span className="block text-[#EE7B2E]">вопросы</span>
         </h2>
@@ -61,10 +61,10 @@ export default function Faq() {
 
         <div className="space-y-2">
           {faqs.map((faq) => (
-            <div key={faq.id} className="border-b border-[#e8edf5] dark:border-[#2a2d30] last:border-0">
+            <div key={faq.id} className="border-b border-[#f0e7dc] dark:border-[#352d24] last:border-0">
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="flex justify-between items-center w-full text-left py-4 font-medium text-[#1a1f2e] dark:text-white hover:text-[#EE7B2E] transition-colors"
+                className="flex justify-between items-center w-full text-left py-4 font-medium text-[#2b2620] dark:text-white hover:text-[#EE7B2E] transition-colors"
                 aria-expanded={openItem === faq.id}
                 aria-controls={`faq-answer-${faq.id}`}
               >

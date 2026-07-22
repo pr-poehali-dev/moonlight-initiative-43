@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8f9fb;
-  --foreground: #1a1f2e;
-  --card: #ffffff;
-  --card-foreground: #1a1f2e;
-  --card-border: #e8edf5;
+  --background: #faf6f1;
+  --foreground: #2b2620;
+  --card: #fffdfb;
+  --card-foreground: #2b2620;
+  --card-border: #f0e7dc;
   --primary: #ee7b2e;
   --primary-foreground: #ffffff;
   --teal: #2ec4b6;
   --teal-light: #e6faf8;
-  --secondary: #f0f4fa;
-  --secondary-foreground: #1a1f2e;
-  --muted: #6b7280;
-  --muted-foreground: #4b5563;
+  --secondary: #f5ede3;
+  --secondary-foreground: #2b2620;
+  --muted: #8a7f70;
+  --muted-foreground: #6b6156;
   --accent: #fff4ed;
   --accent-foreground: #ee7b2e;
-  --border: #dde4ef;
-  --input: #dde4ef;
+  --border: #ece0d2;
+  --input: #ece0d2;
   --ring: #ee7b2e;
   --radius: 0.75rem;
 }
 
 .dark {
-  --background: #101112;
-  --foreground: #d9d9d9;
-  --card: #1c1e20;
+  --background: #1c1815;
+  --foreground: #ece5dd;
+  --card: #262019;
   --card-foreground: #ffffff;
-  --card-border: #2a2d30;
+  --card-border: #352d24;
   --primary: #ee7b2e;
   --primary-foreground: #ffffff;
   --teal: #2ec4b6;
@@ -47,18 +47,18 @@
 
 @layer base {
   body {
-    background-color: #f8f9fb;
+    background-color: #faf6f1;
     color: var(--foreground);
     font-family: "Inter", system-ui, sans-serif;
   }
 
   .dark body {
-    background-color: #101112;
+    background-color: #1c1815;
   }
 
   html {
     scroll-behavior: smooth;
-    background-color: #f8f9fb;
+    background-color: #faf6f1;
   }
 
   h1 {

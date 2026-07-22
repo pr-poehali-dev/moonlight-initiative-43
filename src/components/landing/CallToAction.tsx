@@ -4,13 +4,13 @@ export default function CallToAction() {
   return (
     <section id="contact" className="my-20">
       <div
-        className="rounded-3xl border border-[#e8edf5] shadow-sm overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #fff4ed 0%, #ffffff 40%, #e6faf8 100%)" }}
+        className="rounded-3xl border border-[#f0e7dc] shadow-sm overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #fff4ed 0%, #fffdfb 40%, #fbf1e9 100%)" }}
       >
         <div className="p-8 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           <div>
             <span className="teal-tag mb-4 inline-block">Связаться с нами</span>
-            <h2 className="text-[#1a1f2e] mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+            <h2 className="text-[#2b2620] mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
               Оставьте <span className="text-[#EE7B2E]">заявку</span>
             </h2>
             <p className="mb-6 text-sm md:text-base text-gray-500">
@@ -39,36 +39,36 @@ export default function CallToAction() {
             </div>
           </div>
 
-          <form className="bg-white rounded-2xl p-6 md:p-8 space-y-4 shadow-sm border border-[#e8edf5]">
+          <form className="bg-[#fffdfb] rounded-2xl p-6 md:p-8 space-y-4 shadow-sm border border-[#f0e7dc]">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium text-[#1a1f2e] mb-1.5">Имя</label>
+                <label className="block text-sm font-medium text-[#2b2620] mb-1.5">Имя</label>
                 <input
                   type="text"
                   placeholder="Ваше имя"
-                  className="w-full rounded-lg border border-[#dde4ef] bg-[#f8f9fb] px-4 py-2.5 text-[#1a1f2e] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm"
+                  className="w-full rounded-lg border border-[#ece0d2] bg-[#faf6f1] px-4 py-2.5 text-[#2b2620] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#1a1f2e] mb-1.5">Компания</label>
+                <label className="block text-sm font-medium text-[#2b2620] mb-1.5">Компания</label>
                 <input
                   type="text"
                   placeholder="Название компании"
-                  className="w-full rounded-lg border border-[#dde4ef] bg-[#f8f9fb] px-4 py-2.5 text-[#1a1f2e] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm"
+                  className="w-full rounded-lg border border-[#ece0d2] bg-[#faf6f1] px-4 py-2.5 text-[#2b2620] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm"
                 />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#1a1f2e] mb-1.5">Телефон или e-mail</label>
+              <label className="block text-sm font-medium text-[#2b2620] mb-1.5">Телефон или e-mail</label>
               <input
                 type="text"
                 placeholder="Как с вами связаться"
-                className="w-full rounded-lg border border-[#dde4ef] bg-[#f8f9fb] px-4 py-2.5 text-[#1a1f2e] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm"
+                className="w-full rounded-lg border border-[#ece0d2] bg-[#faf6f1] px-4 py-2.5 text-[#2b2620] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#1a1f2e] mb-1.5">Интересует</label>
-              <select className="w-full rounded-lg border border-[#dde4ef] bg-[#f8f9fb] px-4 py-2.5 text-[#1a1f2e] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm">
+              <label className="block text-sm font-medium text-[#2b2620] mb-1.5">Интересует</label>
+              <select className="w-full rounded-lg border border-[#ece0d2] bg-[#faf6f1] px-4 py-2.5 text-[#2b2620] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm">
                 <option>Размещение оборудования</option>
                 <option>Аренда стоек / модулей</option>
                 <option>Партнёрство</option>
@@ -77,11 +77,11 @@ export default function CallToAction() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#1a1f2e] mb-1.5">Комментарий</label>
+              <label className="block text-sm font-medium text-[#2b2620] mb-1.5">Комментарий</label>
               <textarea
                 rows={3}
                 placeholder="Кратко опишите вашу задачу"
-                className="w-full rounded-lg border border-[#dde4ef] bg-[#f8f9fb] px-4 py-2.5 text-[#1a1f2e] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm resize-none"
+                className="w-full rounded-lg border border-[#ece0d2] bg-[#faf6f1] px-4 py-2.5 text-[#2b2620] focus:outline-none focus:ring-2 focus:ring-[#2EC4B6] focus:border-transparent text-sm resize-none"
               />
             </div>
             <button

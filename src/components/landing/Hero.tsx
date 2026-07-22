@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="my-8 relative overflow-hidden rounded-3xl border border-[#e8edf5] shadow-sm"
-      style={{ background: 'linear-gradient(135deg, #fff4ed 0%, #ffffff 50%, #e6faf8 100%)' }}
+      className="my-8 relative overflow-hidden rounded-3xl border border-[#f0e7dc] shadow-sm"
+      style={{ background: 'linear-gradient(135deg, #fff4ed 0%, #fffdfb 50%, #fbf1e9 100%)' }}
     >
       <div className="p-8 md:p-10 lg:p-12 flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2 z-10">
           <span className="teal-tag mb-4 inline-block">Ленинградская область · 15 ЦОД · 30 МВт</span>
-          <h1 className="text-[#1a1f2e] text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
+          <h1 className="text-[#2b2620] text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
             Дата-центр
             <span className="block text-[#EE7B2E]">Позитрон</span>
           </h1>
